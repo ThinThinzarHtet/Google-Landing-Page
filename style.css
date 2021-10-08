@@ -55,6 +55,7 @@ nav a:hover {
 .input-wrapper .search-box {
     width: 100%;
     color: #222;
+    text-indent: 3vw;
     border: 1px solid #dfe1e5;
     font-size: 13px;
     padding: 14px;
@@ -67,6 +68,12 @@ nav a:hover {
     border-color: rgba(223, 225, 229, 0);
 }
 
+.input-wrapper > .search {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    color: #808080;
+}
 .input-wrapper > img {
     width: 25px;
     height: 25px;
