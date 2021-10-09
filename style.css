@@ -39,6 +39,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* google logo and search bar */
 .wrapper {
     display: flex;
     position: relative;
@@ -51,6 +52,7 @@ nav a:hover {
 .input-wrapper {
     position: relative;
     width: 582px;
+    margin-top: 30px;
 }
 .input-wrapper .search-box {
     width: 100%;
@@ -61,11 +63,17 @@ nav a:hover {
     padding: 14px;
     border-radius: 24px;
     outline: none;
+    font-size: 1rem;
 }
 
 .input-wrapper .search-box:hover, .input-wrapper .search-box:focus {
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     border-color: rgba(223, 225, 229, 0);
+    
+}
+
+.search-box:focus::placeholder{
+    color: transparent;
 }
 
 .input-wrapper > .search {
@@ -80,5 +88,31 @@ nav a:hover {
     position: absolute;
     right: 12px;
     top: 12px;
-    
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 25px;
+}
+
+.btn-wrapper > .btn {
+    background-color: #f2f2f2;
+    color: #5F6368;
+    font-size: 14px;
+    height: 36px;
+    padding: 8px 16px;
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0,0,0,0);
+    color: #222;
+}
+
+.btn-wrapper > .btn:hover {
+    background-image:linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
 }
